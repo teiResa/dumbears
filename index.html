@@ -15,7 +15,7 @@
 
   2024-05-24 It's midnight in around twenty minutes, but I am feeling pretty great. I had to be on bedrest with a strained neck. It still really hurts, and the painkillers really did their jobs, so I think I am ready to get back to normal. Tonight I am testing myself sitting at my desk on my yoga ball. It hurts, but I don't have a chair and am trying to avoid buying a replacement chair until this autumn. Ice-Heat therapy, do your magic!
 
-  
+
 
 
  <div id="top-grid">
@@ -32,10 +32,22 @@
 <div class="container">
  <div class="top">
    <div class="spacer">spacer</div>
-   <div class="fill-in"> yooooooo this is where the whiteboard scene goes</div>
+   <div class="fill-in"> yooooooo this is where the whiteboard scene goes
+
+    
+   </div>
    <div class="spacer2">spacer</div>
  </div>
- <div class="bottom">footer</div>
+ <div class="bottom">footer<div id="date_time"> </div></div>
 </div>
+<!-- time related js -->
+<script src="assets/script1.js"></script>
+<script> const element = document.getElementById('date_time');
+      
+ setInterval(function () {
+   const currentDate = new Date();
+   element.innerText = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+ }, 1000);</script>
+<!-- static js -->
 </body>
 </html>
