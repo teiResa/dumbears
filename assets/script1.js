@@ -7,7 +7,9 @@ console.log(currMonth);
 console.log(currYear);
 console.log( "yyyy/mm/dd" + "<b>" + currDay + "/" + currMonth + "/" + currYear + "</b>" + currHour + currMinute + currSeconds);
 
-/* my gosh, i feel like crud. 05-27 */
+/* my gosh, i feel like crud. 05-27
+Alright! Let's do this! 05-28
+*/
 
 const element = document.getElementById('date_time');
       
