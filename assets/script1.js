@@ -7,6 +7,8 @@ console.log(currMonth);
 console.log(currYear);
 console.log( "yyyy/mm/dd" + "<b>" + currDay + "/" + currMonth + "/" + currYear + "</b>" + currHour + currMinute + currSeconds);
 
+/* my gosh, i feel like crud. 05-27 */
+
 const element = document.getElementById('date_time');
       
 setInterval(function () {
