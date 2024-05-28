@@ -34,10 +34,20 @@
 
 .spacer { grid-area: spacer;}
 
-.fill-in { grid-area: fill-in; 
- 
- 
+.spc {
+ color: rgba(0, 0, 0, 0.193);
+}
 
+.fill-in { grid-area: fill-in; 
+
+}
+
+.board_contents {
+ font-size: 3rem;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: green;
+
+ margin-left: 250px;
 }
 
 .spacer2 { grid-area: spacer2; }
