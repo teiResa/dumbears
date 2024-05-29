@@ -1,4 +1,7 @@
 let currentDate = new Date();
+let currHour = currentDate.getHours();
+let currMinute = currentDate.getMinutes();
+let currSeconds = currentDate.getSeconds();
 let currDay = currentDate.getDate()
 let currMonth = currentDate.getMonth() + 1
 let currYear = currentDate.getFullYear()
@@ -11,10 +14,21 @@ console.log( "yyyy/mm/dd" + "<b>" + currDay + "/" + currMonth + "/" + currYear +
 Alright! Let's do this! 05-28
 */
 
-const element = document.getElementById('date_time');
+
+const timeZonesChina = [
+ 'Asia/Shanghai',  'Asia/Hong_Kong'
+]
+timeZonesChina.forEach(timeZone => {
+ console.log(timeZone)
+})
+
+
+const wowowow = document.getElementById('date_time');
       
 setInterval(function () {
+ /*
   const currentDate = new Date();
-  element.innerText = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
-}, 1000);
+  */
+  wowowow.innerText = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+}, 200);
 
