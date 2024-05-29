@@ -14,13 +14,14 @@ console.log( "yyyy/mm/dd" + "<b>" + currDay + "/" + currMonth + "/" + currYear +
 Alright! Let's do this! 05-28
 */
 
-
+/*
 const timeZonesChina = [
  'Asia/Shanghai',  'Asia/Hong_Kong'
 ]
 timeZonesChina.forEach(timeZone => {
  console.log(timeZone)
 })
+*/
 
 
 const wowowow = document.getElementById('date_time');
