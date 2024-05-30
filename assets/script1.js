@@ -1,35 +1,15 @@
-let currentDate = new Date();
-let currHour = currentDate.getHours();
-let currMinute = currentDate.getMinutes();
-let currSeconds = currentDate.getSeconds();
-let currDay = currentDate.getDate()
-let currMonth = currentDate.getMonth() + 1
-let currYear = currentDate.getFullYear()
-console.log(currDay);
-console.log(currMonth);
-console.log(currYear);
-console.log( "yyyy/mm/dd" + "<b>" + currDay + "/" + currMonth + "/" + currYear + "</b>" + currHour + currMinute + currSeconds);
 
-/* my gosh, i feel like crud. 05-27
-Alright! Let's do this! 05-28
-*/
+let getChinaTimeEN = function(){
+ document.getElementById('date_time_EN').innerHTML = new Date().toLocaleString('en-CA', {timeZone: 'Asia/Shanghai', timeStyle: 'short', hourCycle:'h12', dateStyle: 'medium'});
+}
 
-/*
-const timeZonesChina = [
- 'Asia/Shanghai',  'Asia/Hong_Kong'
-]
-timeZonesChina.forEach(timeZone => {
- console.log(timeZone)
-})
-*/
+getChinaTimeEN();
+setInterval(getChinaTimeEN, 1000);
 
+let getChinaTimeZH = function(){
+ document.getElementById('date_time_ZH').innerHTML = new Date().toLocaleString('en-CA', {timeZone: 'Asia/Shanghai', timeStyle: 'medium', hourCycle:'h24'});
+}
 
-const wowowow = document.getElementById('date_time');
-      
-setInterval(function () {
- /*
-  const currentDate = new Date();
-  */
-  wowowow.innerText = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
-}, 200);
+getChinaTimeZH();
+setInterval(getChinaTimeZH, 1000);
 
