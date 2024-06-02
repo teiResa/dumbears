@@ -1,0 +1,7 @@
+<details> <summary>Examples of the alerts:</summary> 
+     <audio controls>
+      <source src="/assets/audio/advance_alert.mp3" type="audio/mp3">
+      <source src="/assets/audio/air-raid_alert.mp3" type="audio/mp3">
+      <source src="/assets/audio/dismiss_alert.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+  </audio></details>

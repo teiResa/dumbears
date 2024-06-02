@@ -133,3 +133,194 @@ height: 100px;}
 }
 }
 
+
+
+
+/* ~~~~~~~~~~~~~ MODAL ~~~~~~~~~~~~~~~ */
+
+/* The Modal (background) */
+.modal {
+ display: none; /* Hidden by default */
+ position: fixed; /* Stay in place */
+ z-index: 1; /* Sit on top */
+ left: 0;
+ top: 0;
+ width: 100%; /* Full width */
+ height: 100%; /* Full height */
+ overflow: auto; /* Enable scroll if needed */
+ background-color: rgb(0,0,0); /* Fallback color */
+ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ -webkit-animation-name: fadeIn; /* Fade in the background */
+ -webkit-animation-duration: 0.4s;
+ animation-name: fadeIn;
+ animation-duration: 0.4s
+}
+
+
+
+/* Modal Content */
+.modal-content {
+ position: fixed;
+ bottom: 70px; /* revertable was 0 */
+ background-color: #fefefe;
+ width: 100%;
+ -webkit-animation-name: slideIn;
+ -webkit-animation-duration: 0.4s;
+ animation-name: slideIn;
+ animation-duration: 0.4s
+}
+
+#playa_bud_whole {
+ /*
+ background-color: #f11313;
+ */
+ display: flex;
+ justify-content: space-around;
+ align-content: center;
+ flex-wrap: wrap;
+ flex-direction: row;
+ height: 210px;
+}
+
+.audio_playas {
+ border: 2px dashed white;
+ height: 200px;
+ justify-content: flex-end;
+}
+
+
+
+
+
+
+audio, .tha_audio_players {
+  /* aka .tha_audio_playas */
+ background-color: aqua;
+
+ margin-top: 35%;
+}
+
+/* Modal only in this media tag currently */
+@media (min-width:600px) and (max-width:942px) {
+
+ /* ~~~~~~~~~~~~~ MODAL ~~~~~~~~~~~~~~~ */
+
+/* The Modal (background) */
+.modal {
+ display: none; /* Hidden by default */
+ position: fixed; /* Stay in place */
+ z-index: 1; /* Sit on top */
+ left: 0;
+ top: 0;
+ width: 100%; /* Full width */
+ height: 100%; /* Full height */
+ overflow: auto; /* Enable scroll if needed */
+ background-color: rgb(0,0,0); /* Fallback color */
+ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ -webkit-animation-name: fadeIn; /* Fade in the background */
+ -webkit-animation-duration: 0.4s;
+ animation-name: fadeIn;
+ animation-duration: 0.4s
+}
+
+
+
+/* Modal Content */
+.modal-content {
+ position: fixed;
+ bottom: 40px; /* revertable was 0 */
+ background-color: #fefefe;
+ width: 100%;
+ -webkit-animation-name: slideIn;
+ -webkit-animation-duration: 0.4s;
+ animation-name: slideIn;
+ animation-duration: 0.4s
+}
+
+#playa_bud_whole {
+ /*
+ background-color: #13f1d7;
+ */
+ display: flex;
+  /* I changed the flex specs for half screen because I am a stinky cheater, cheater pumpkin eater and I like it this way more. */
+ align-content: center;
+ flex-wrap: nowrap;
+ height: 560px;
+ align-items: center;
+ flex-direction: column;
+}
+
+.audio_playas {
+ border: 2px dashed white;
+ height: 200px;
+ justify-content: flex-end;
+ margin: 9px 0px;
+}
+
+
+
+
+
+
+audio, .tha_audio_players {
+  /* aka .tha_audio_playas */
+ background-color: aqua;
+
+ margin-top: 35%;
+}
+
+
+}
+
+
+
+
+/* The Close Button */
+.close {
+ color: white;
+ float: right;
+ font-size: 38px;
+ font-weight: bolder;
+}
+
+.close:hover,
+.close:focus {
+ color: #f11313;
+ text-decoration: none;
+ cursor: pointer;
+}
+
+.modal-header {
+ padding: 2px 16px;
+ background-color: #5cb85c9a;
+ color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+ padding: 2px 16px;
+ background-color: #5cb85c70;
+ color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+ from {bottom: -300px; opacity: 0} 
+ to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+ from {bottom: -300px; opacity: 0}
+ to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+ from {opacity: 0} 
+ to {opacity: 1}
+}
+
+@keyframes fadeIn {
+ from {opacity: 0} 
+ to {opacity: 1}
+}

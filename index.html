@@ -38,13 +38,10 @@
    <div class="spc spacer">spacer</div>
    <div class="fill-in"> yooooooo this is where the whiteboard scene goes
     <div class="board_contents">
-     May 12 <br><small> (全国防灾减灾日, Disaster prevention and mitigation day),</small><br> the third saturday of September <br><small>(国防教育日, national defense education day), </small><br>December 13 <br><small> (南京大屠杀遇难者国家阵亡将士纪念日, National Memorial Day for the Victims of the Nanjing Massacre)</small>
-    <div><details> <summary>Examples of the alerts:</summary> 
-     <audio controls>
-      <source src="your-audio-file.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-  </audio></details>
-    </div>
+     May 12 <br><small> (全国防灾减灾日, Disaster prevention and mitigation day),</small><br> the third saturday of September <br><small>(国防教育日, national defense education day), </small><br>December 13 <br><small> (南京大屠杀遇难者国家阵亡将士纪念日, <br> National Memorial Day for the Victims of the Nanjing Massacre)</small> <br>
+    <a href="#">Listen to examples of the alarms.</a>
+    <!-- Trigger the modal with the audio players -->
+<button id="myBtn">Listen to examples</button>
     </div>
 
     <!--
@@ -70,6 +67,46 @@
   <div id="date_time_EN"> en time here </div> and <div id="date_time_ZH"> zh time here </div>--></div>
  </div>
 </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+ <!-- Modal content -->
+ <div class="modal-content">
+   <div class="modal-header">
+     <span class="close">&times;</span>
+     <h2>Modal Header</h2>
+   </div>
+   <div class="modal-body">
+     <div id="playa_bud_whole">
+
+     <div class="audio_playas playa00"> <audio controls class="tha_audio_playas">
+      <source src="/assets/audio/advance_alert.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+  </audio> </div>
+     <div class="audio_playas playa01"> <audio controls class="tha_audio_playas">
+      <source src="/assets/audio/air-raid_alert.mp3" type="audio/mp3">
+      
+      Your browser does not support the audio element.
+  </audio> </div>
+     <div class="audio_playas playa02"> <audio controls class="tha_audio_playas">
+      <source src="/assets/audio/dismiss_alert.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+  </audio></div> </div>
+
+   </div>
+   <div class="modal-footer">
+     <h3>According to my research these are the standard for the mainland. If this is wrong for your city (mainland only), <a href="mailto:techkeen@outlook.com"> please contact admin</a> and subject the email with "[Your city] alerts wrong". </h3>
+     <!--
+     <div id="date_time">
+      <p>Current time in China:</p> <p style="width: 50px;"></p>
+      <p id="date_time_EN">en</p> 
+      <p> &nbsp;&nbsp; (</p><p id="date_time_ZH">zh</p> <p> ) &nbsp;</p></div>-->
+   </div>
+ </div>
+
+</div>
+
 <!-- time related js -->
 <script src="assets/script1.js"></script>
 <!-- static js -->
