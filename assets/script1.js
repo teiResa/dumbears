@@ -60,3 +60,10 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+/* idk if this works for audio player...
+
+
+let notTooLoud = document.getElementsByClassName("the_audio_playas");
+notTooLoud.volume = 0.5;
+*/

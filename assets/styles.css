@@ -1,3 +1,8 @@
+body {
+ overflow: hidden;
+ /* removable */
+}
+
 .container {  display: grid;
  grid-template-rows: 1fr 1fr;
  grid-auto-columns: 1fr;
@@ -135,6 +140,20 @@ height: 100px;}
 
 
 
+ .board_contents button {
+ background-color: #eceac5;
+ border: #e0dea1 2px outset;
+ border-radius: 8px;
+ font-size: 16px;
+ /* #58443c */
+}
+
+.board_contents button:hover {
+ background-color: #f28985;
+ border: #eb5751 2px inset;
+}
+
+
 
 /* ~~~~~~~~~~~~~ MODAL ~~~~~~~~~~~~~~~ */
 
@@ -154,6 +173,10 @@ height: 100px;}
  -webkit-animation-duration: 0.4s;
  animation-name: fadeIn;
  animation-duration: 0.4s
+}
+
+.modal a {
+ color: #91a8c7;
 }
 
 
@@ -187,10 +210,6 @@ height: 100px;}
  height: 200px;
  justify-content: flex-end;
 }
-
-
-
-
 
 
 audio, .tha_audio_players {
@@ -285,14 +304,14 @@ audio, .tha_audio_players {
 
 .close:hover,
 .close:focus {
- color: #f11313;
+ color: #91a8c7;
  text-decoration: none;
  cursor: pointer;
 }
 
 .modal-header {
  padding: 2px 16px;
- background-color: #5cb85c9a;
+ background-color: #becbdd;
  color: white;
 }
 
@@ -300,8 +319,8 @@ audio, .tha_audio_players {
 
 .modal-footer {
  padding: 2px 16px;
- background-color: #5cb85c70;
- color: white;
+ background-color: #becbdd70;
+ color: rgb(146, 146, 146);
 }
 
 /* Add Animation */

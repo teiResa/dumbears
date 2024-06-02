@@ -35,13 +35,14 @@
 -->
 <div class="container">
  <div class="top">
-   <div class="spc spacer">spacer</div>
-   <div class="fill-in"> yooooooo this is where the whiteboard scene goes
+   <div class="spc spacer"> Hey TeiResa (dev), put a disclaimer modal on launch with this disclaimer:<br></div>
+   <div class="fill-in"> 
+    This site is for reference only. I am just a kind volunteer trying to help ease non-mandarin speakers' anxieties. <br> I referenced a few mainland provincial and municipal government websites in early May 2024. The dates and alerts are subject to change, so check your local government's sites regularly. Also, you could ask your local friends, mine always seemed informed on this stuff. 
     <div class="board_contents">
      May 12 <br><small> (全国防灾减灾日, Disaster prevention and mitigation day),</small><br> the third saturday of September <br><small>(国防教育日, national defense education day), </small><br>December 13 <br><small> (南京大屠杀遇难者国家阵亡将士纪念日, <br> National Memorial Day for the Victims of the Nanjing Massacre)</small> <br>
-    <a href="#">Listen to examples of the alarms.</a>
+    <button id="seeBtn"><b>See</b> the alerts</button>
     <!-- Trigger the modal with the audio players -->
-<button id="myBtn">Listen to examples</button>
+<button id="myBtn"><b>Listen</b> to alerts</button>
     </div>
 
     <!--
@@ -75,28 +76,33 @@
  <div class="modal-content">
    <div class="modal-header">
      <span class="close">&times;</span>
-     <h2>Modal Header</h2>
+     <h2>Press <i class="fa-solid fa-play"></i> to listen to the recording. (<i class="fa-solid fa-pause"></i> will pause)  </h2>
    </div>
    <div class="modal-body">
      <div id="playa_bud_whole">
 
      <div class="audio_playas playa00"> <audio controls class="tha_audio_playas">
       <source src="/assets/audio/advance_alert.mp3" type="audio/mp3">
-      Your browser does not support the audio element.
+      Advance warning. If not a test, be prepared to go to nearest emergency shelter.
+      Cranks for 36 seconds, rests for 24 seconds. Repeats for 3 cycles. 
+      鸣36秒 停24秒 3遍为一个周期
   </audio> </div>
      <div class="audio_playas playa01"> <audio controls class="tha_audio_playas">
       <source src="/assets/audio/air-raid_alert.mp3" type="audio/mp3">
-      
-      Your browser does not support the audio element.
+      If not a test, go to nearest emergency shelter. This is the "emergency in progress" alarm.
+      Cranks for 6 seconds, rests for 6 seconds. Repeats for 15 cycles. 
+      鸣6秒 停6秒 15遍为一个周期
   </audio> </div>
      <div class="audio_playas playa02"> <audio controls class="tha_audio_playas">
       <source src="/assets/audio/dismiss_alert.mp3" type="audio/mp3">
-      Your browser does not support the audio element.
+      Warning Dismissed
+      Cranks non-stop for 3 minutes.
+      鸣3分钟为一个周期
   </audio></div> </div>
 
    </div>
    <div class="modal-footer">
-     <h3>According to my research these are the standard for the mainland. If this is wrong for your city (mainland only), <a href="mailto:techkeen@outlook.com"> please contact admin</a> and subject the email with "[Your city] alerts wrong". </h3>
+     <h3>According to my research these are the standard for the mainland. If this is wrong for your city (mainland only), <a href="mailto:techkeen@outlook.com"> please contact admin</a> and subject the email with "[Your city, province] alerts wrong". </h3>
      <!--
      <div id="date_time">
       <p>Current time in China:</p> <p style="width: 50px;"></p>
@@ -110,5 +116,9 @@
 <!-- time related js -->
 <script src="assets/script1.js"></script>
 <!-- static js -->
+
+<!-- fontawesome kit-->
+        <script src="https://kit.fontawesome.com/b9730a3ea0.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
