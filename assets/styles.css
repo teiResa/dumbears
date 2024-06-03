@@ -62,6 +62,8 @@ body {
     margin-left: 160px ;
     margin-top: 5px;
 
+    width: 35vw;
+
 }
 
 .spacer2 { grid-area: spacer2; }
@@ -82,14 +84,15 @@ height: 100px;}
 
 }
 
+#date_time {
+  width: 80%;
+ }
+
  #date_time p {
   margin-top: 0px;
  margin-bottom: 0px;
+ 
 }
-
-
-
-
 
 @media (min-width:1000px) and (max-width:2500px) {
 
@@ -126,10 +129,16 @@ height: 100px;}
  margin-left: 250px;
  padding-left: 50px;
  margin-top: 30px;
+
+ width: 30vw;
  }
 
  .board_contents small {
   font-size: medium;
+ }
+
+ #date_time {
+  width: 75%;
  }
 
  #date_time p {
@@ -137,6 +146,133 @@ height: 100px;}
   margin-bottom: 25px;
 }
 }
+
+@media (min-width:600px) and (max-width:750px) {
+ .container {
+  margin-left: -10px;
+ }
+ .top {   
+  height: 565px;
+ 
+  background-image: url('https://teiresa.github.io/dumbears/assets/graphics/crane.png');
+  background-size: 35%;
+  
+ }
+ .board_contents {
+  background-color: lawngreen;
+  
+  font-size: x-large;
+  padding-left: 3px;
+ 
+  width: 60vw;
+  }
+
+  #date_time {
+   width: 99vw;
+  }
+
+  /*
+  .container {
+   height: 1800px;
+  
+   color: #523e373b;
+   margin-top: 15vh;
+   max-height: 500px;
+}
+*/
+
+}
+
+@media (min-width: 933px) and (max-width:998px) {
+ .container {
+  margin-top: 1vh;
+
+ }
+
+ .top {   
+  height: 673px;
+ 
+  background-size: 135%;
+  margin-left: -40px;
+ }
+
+ .board_contents {
+  margin-left: 363px;
+  margin-top: -33px ;
+  width: 50vw;
+
+  background-color: #eb575100;
+ }
+
+  #date_time {
+   width: 78vw;
+  }
+
+
+}
+
+@media (min-width:751px) and (max-width:942px) {
+
+ .top {   
+  height: 567px;
+ 
+  background-image: url('https://teiresa.github.io/dumbears/assets/graphics/crane.png');
+  background-size: 35%;
+  
+ }
+
+ .board_contents {
+  background-color: plum;
+  
+  font-size: large;
+  padding-left: 30px;
+ 
+  width: 33vw;
+  }
+
+  #date_time {
+   width: 75vw;
+  }
+
+}
+
+@media (min-width:1001px) and (max-width: 1208px) {
+ .top {
+  background-size: 110%;
+
+ }
+ 
+ #date_time {
+  width: 100vw;
+ }
+}
+
+@media (min-width:1209px) and (max-width: 1308px) {
+ .top{ 
+  background-size: 105%;
+
+ }
+
+ #date_time {
+  width: 96vw;
+ }
+}
+
+@media (min-width: 1309px) and (max-width: 1408px) {
+ .top {
+  background-size: 95%;
+  background-color: red;
+ }
+}
+
+@media (min-width: 1409px) and (max-width: 1508px) {
+ .top {
+  background-size: 90%;
+  background-color: pink;
+ }
+}
+
+
 
 
 
