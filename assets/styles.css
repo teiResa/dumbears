@@ -434,7 +434,12 @@ audio, .tha_audio_players {
 #looky_table {
  width: 80vw;
  height: 210px;
- color: pink;
+ color: #0a0c10;
+}
+
+#looky_table th {
+ color: #929292;
+ font-size: x-large;
 }
 
 #looky_table td {
