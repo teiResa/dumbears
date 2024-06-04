@@ -67,14 +67,14 @@
  </div>
 </div>
 
-<!-- The Modal -->
+<!-- The Listen Modal -->
 <div id="myModal" class="modal">
 
  <!-- Modal content -->
  <div class="modal-content">
    <div class="modal-header">
      <span class="close">&times;</span>
-     <h2>Press <i class="fa-solid fa-play"></i> to listen to the recording. (<i class="fa-solid fa-pause"></i> will pause)  </h2>
+     <h2>Press <i class="fa-solid fa-play"></i> to listen to the recording. (&nbsp;<i class="fa-solid fa-pause"></i> will pause)  </h2>
    </div>
    <div class="modal-body">
      <div id="playa_bud_whole">
@@ -109,7 +109,58 @@
    </div>
  </div>
 
+</div> <!--  end of listen modal -->
+
+<!-- The Look Modal -->
+<div id="myLookModal" class="modal">
+
+ <!-- Modal content -->
+ <div class="modal-content">
+   <div class="modal-header">
+     <span class="close" id="closeLook">&times;</span>
+     <h2> The <i class="fa-solid fa-volume-high"></i> means the horn is cranking, then the <i class="fa-solid fa-volume-off"></i> is the crank  </h2>
+   </div>
+   <div class="modal-body">
+     <div id="looky_bud_whole">
+
+      <table id="looky_table">
+       <tr>
+        <th>Advanced Warning</th>
+        <th>Emergency In Progress</th>
+        <th>Dismissed Alert</th>
+       </tr>
+       <tr>
+        <td class="td_animation"> <i class="fa-solid fa-volume-off"></i> </td>
+        <td class="td_animation"> <i class="fa-solid fa-volume-off"></i> </td>
+        <td class="td_animation"> <i class="fa-solid fa-volume-off"></i> </td>
+       </tr>
+       <tr>
+        <td>If not a test, be prepared to go to nearest emergency shelter.
+         Cranks for 36 seconds, rests for 24 seconds. Repeats for 3 cycles. 
+         鸣36秒 停24秒 3遍为一个周期</td>
+         <td>If not a test, go to nearest emergency shelter. This is the "emergency in progress" alarm.
+          Cranks for 6 seconds, rests for 6 seconds. Repeats for 15 cycles. 
+          鸣6秒 停6秒 15遍为一个周期</td>
+          <td>Cranks non-stop for 3 minutes.
+           鸣3分钟为一个周期</td>
+       </tr>
+      </table>
+ </div>
+
+   </div>
+   <div class="modal-footer">
+     <h3>According to my research these are the standard for the mainland. If this is wrong for your city (mainland only), <a href="mailto:techkeen@outlook.com"> please contact admin</a> and subject the email with "[Your city, province] alerts wrong". </h3>
+     <!--
+     <div id="date_time">
+      <p>Current time in China:</p> <p style="width: 50px;"></p>
+      <p id="date_time_EN">en</p> 
+      <p> &nbsp;&nbsp; (</p><p id="date_time_ZH">zh</p> <p> ) &nbsp;</p></div>-->
+   </div>
+ </div>
+
 </div>
+
+
 
 <!-- time related js -->
 <script src="assets/script1.js"></script>

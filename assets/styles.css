@@ -392,7 +392,7 @@ audio, .tha_audio_players {
  animation-duration: 0.4s
 }
 
-#playa_bud_whole {
+#playa_bud_whole, #looky_bud_whole {
  /*
  background-color: #13f1d7;
  */
@@ -405,16 +405,13 @@ audio, .tha_audio_players {
  flex-direction: column;
 }
 
+
 .audio_playas {
  border: 2px dashed white;
  height: 200px;
  justify-content: flex-end;
  margin: 9px 0px;
 }
-
-
-
-
 
 
 audio, .tha_audio_players {
@@ -424,9 +421,31 @@ audio, .tha_audio_players {
  margin-top: 35%;
 }
 
-
 }
 
+#looky_bud_whole {
+ display: flex;
+ align-content: center;
+ flex-wrap: nowrap;
+ align-items: center;
+ flex-direction: column;
+}
+
+#looky_table {
+ width: 80vw;
+ height: 210px;
+ color: pink;
+}
+
+#looky_table td {
+ padding: 0px 15px;
+ width: 160px;
+}
+
+.td_animation {
+ justify-content: center;
+ font-size: xx-large;
+}
 
 
 
