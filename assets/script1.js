@@ -30,6 +30,35 @@ getChinaTimeZH();
 setInterval(getChinaTimeZH, 1000);
 
 
+/* ~~~~~~~~~~~~ ENTRY MODAL ~~~~~~~~~~~~~ */
+
+
+// Get the modal
+var modalEntry = document.getElementById("entryModal");
+
+// Get the button that opens the modal
+//var btnEntry = document.getElementById("seeBtn");
+
+// When the user clicks the button, open the modal 
+/*
+btnEntry.onclick = function() {
+  modalEntry.style.display = "block";
+}
+*/
+
+
+// When the user clicks anywhere outside of the modal, close it
+
+window.addEventListener('load', function() {
+  // Code runs after the page loads 
+   modalEntry.style.display = "block";
+});
+
+window.onclick = function(event) {
+  if (event.target == modalEntry) {
+    modalEntry.style.display = "none";
+}};
+
 
 
 
@@ -42,10 +71,13 @@ var modalLook = document.getElementById("myLookModal");
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 var btnLook = document.getElementById("seeBtn");
+//no btn for launching entry disclaimer modal
+var btnEntry = document.getElementById("disclaimerBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var spanListen = document.getElementById("closeListen");
 var spanLook = document.getElementById("closeLook");
+var spanEntry = document.getElementById("closeEntry");
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
@@ -56,7 +88,7 @@ btnLook.onclick = function() {
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+spanListen.onclick = function() {
   modalListen.style.display = "none";
 }
 
@@ -64,27 +96,25 @@ spanLook.onclick = function() {
   modalLook.style.display = "none";
 }
 
+spanEntry.onclick = function() {
+ modalEntry.style.display = "none";
+}
 
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modalListen | event.target == modalLook) {
+  if (event.target == modalListen || event.target == modalLook || event.target == modalEntry ) {
     modalListen.style.display = "none";modalLook.style.display = "none";
+    modalEntry.style.display = "none";
   }
 }
 
 
-/* idk if this works for audio player...
-
-
-let notTooLoud = document.getElementsByClassName("the_audio_playas");
-notTooLoud.volume = 0.5;
-*/
 
 
 
 
-/* ~~~~~~~~~~~~ LOOK MODAL ~~~~~~~~~~~ 
+/* ~~~~~~~~~~~~ MODAL (spare parts) ~~~~~~~~~~~ 
 
 // Get the modal
 var modalLook = document.getElementById("myLookModal");

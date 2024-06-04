@@ -379,7 +379,6 @@ audio, .tha_audio_players {
 }
 
 
-
 /* Modal Content */
 .modal-content {
  position: fixed;
@@ -423,7 +422,7 @@ audio, .tha_audio_players {
 
 }
 
-#looky_bud_whole {
+#looky_bud_whole, #entry_bud_whole {
  display: flex;
  align-content: center;
  flex-wrap: nowrap;
@@ -452,6 +451,10 @@ audio, .tha_audio_players {
  font-size: xx-large;
 }
 
+#entry_table {
+ width: 70vw;
+}
+
 
 
 /* The Close Button */
@@ -475,6 +478,11 @@ audio, .tha_audio_players {
  color: white;
 }
 
+.modal-header h2, .modal-footer h3 {
+ display: flex;
+ justify-content: center;
+}
+
 .modal-body {padding: 2px 16px;}
 
 .modal-footer {
@@ -482,6 +490,8 @@ audio, .tha_audio_players {
  background-color: #becbdd70;
  color: rgb(146, 146, 146);
 }
+
+
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
