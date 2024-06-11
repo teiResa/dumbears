@@ -97,8 +97,10 @@ height: 100px;}
 @media (min-width:1000px) and (max-width:2500px) {
 
  .container {
+  /*
   max-height: 1100px;
   max-width: 1500px;
+  */
   background-color: rgba(137, 43, 226, 0);
 
   align-content: center;
@@ -107,14 +109,14 @@ height: 100px;}
   background-size: 60% !important;
   */
  
-  margin-top: 0vh;
+  margin-top: 1px;
   margin-left: 2vw;
   /* make it calc later */
  }
 
  .top {
-  background-size: 87%;
-  height: 700px;
+  background-size: 67%;
+  height: 600px;
   background-position-x: center;
  }
 
@@ -125,7 +127,8 @@ height: 100px;}
  font-family: Arial, Helvetica, sans-serif;
 */
 
- font-size: xx-large;
+/* was xx-large  but it was too much*/
+ font-size: x-large;
  margin-left: 250px;
  padding-left: 50px;
  margin-top: 30px;
@@ -564,6 +567,52 @@ audio, .tha_audio_players {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+}
+
+
+@media (orientation: portrait) {
+ .container {
+  margin-left: -10px;
+ }
+ .top {   
+  height: 565px;
+  background-image: url('https://teiresa.github.io/dumbears/assets/graphics/scene_yellow.png');
+  background-size: 135%;
+  margin-left: -90px;
+  
+ }
+ .board_contents {
+  background-color: rgba(0, 25, 252, 0);
+  /*
+  font-size: x-large;
+  padding-left: 3px;
+  margin-left: 200px;
+ 
+  width: 60vw;
+  */
+   
+  font-size: large;
+  padding-left: 30px;
+  margin-left: 250px;
+  margin-top: 43px;
+ 
+  width: 53vw;
+  }
+
+  #date_time {
+   width: 99vw;
+  }
+
+  /*
+  .container {
+   height: 1800px;
+  
+   color: #523e373b;
+   margin-top: 15vh;
+   max-height: 500px;
+}
+*/
 
 }
 
