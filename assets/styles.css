@@ -95,6 +95,7 @@ height: 100px;}
 }
 
 @media (min-width:1000px) and (max-width:2500px) {
+ /* On my laptop (with edge) it is all too zoomed in. */
 
  .container {
   /*
