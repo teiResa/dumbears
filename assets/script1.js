@@ -70,22 +70,28 @@ var modalLook = document.getElementById("myLookModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
-var btnLook = document.getElementById("seeBtn");
+/* SeeBtn is disabled until i am ready to make the visual of the air raid sirens alters. I'd probably use gifs, but i have toyed with coding it. IDK yet. */
+// var btnLook = document.getElementById("seeBtn");
 //no btn for launching entry disclaimer modal
 var btnEntry = document.getElementById("disclaimerBtn");
 
 // Get the <span> element that closes the modal
 var spanListen = document.getElementById("closeListen");
-var spanLook = document.getElementById("closeLook");
+/* SeeBtn is disabled until i am ready to make the visual of the air raid sirens alters. I'd probably use gifs, but i have toyed with coding it. IDK yet. */
+// var spanLook = document.getElementById("closeLook");
 var spanEntry = document.getElementById("closeEntry");
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modalListen.style.display = "block";
 }
+
+/* SeeBtn is disabled until i am ready to make the visual of the air raid sirens alters. I'd probably use gifs, but i have toyed with coding it. IDK yet. */
+/*
 btnLook.onclick = function() {
   modalLook.style.display = "block";
 }
+  */
 
 // When the user clicks on <span> (x), close the modal
 spanListen.onclick = function() {
